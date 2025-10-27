@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge</title>
+    <style>
+        /* Hide the flag element visually */
+        #hidden-flag {
+            display: none;  /* The flag is hidden here, but check the attributes! */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the CTF Challenge!</h1>
+    <p>Can you find the hidden flag? Inspect the page source or elements carefully.</p>
+    
+    <!-- This is a comment where the flag might be hidden. Look closely: FLAG{ctf_hidden_flag_example} -->
+    
+    <div id="hidden-flag" data-secret="FLAG{ctf_hidden_flag_example}">
+        <!-- The flag is also encoded in this element's attribute. Good luck! -->
+    </div>
+    
+    <script>
+        // A harmless script to add some misdirection
+        console.log("Welcome to the challenge! Check the console for hints... but there are none here.");
+        // The flag isn't in this script, but maybe it's somewhere else? FLAG{ctf_hidden_flag_example} is not here!
+    </script>
+</body>
+</html>
